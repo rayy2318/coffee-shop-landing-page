@@ -1,2 +1,2 @@
-# coffee-shop-landing-page
+# kopiku-landing-page
 A simple coffee shop landing page built with HTML,CSS,and JavaScript.
