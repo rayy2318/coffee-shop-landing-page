@@ -1,0 +1,158 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f3f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background: #5a2d0c;
+  padding: 15px 30px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #f39c12;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #d35400, #e67e22);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.hero span {
+  color: #f1c40f;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #5a2d0c;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #f39c12;
+  transform: scale(1.05);
+}
+
+.back {
+  margin-top: 20px;
+  background: #7f8c8d;
+}
+
+.back:hover {
+  background: #34495e;
+}
+
+/* Konten */
+.content {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #5a2d0c;
+}
+
+/* Menu Page */
+.menu-page {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.menu-list {
+  display: grid;
+  gap: 20px;
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+.menu-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.2s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  background: #5a2d0c;
+  color: white;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
